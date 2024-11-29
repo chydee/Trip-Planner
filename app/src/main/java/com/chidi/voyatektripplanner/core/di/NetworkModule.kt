@@ -35,11 +35,11 @@ object NetworkModule {
     @Provides
     fun provideApiService(): ApiService =
         Retrofit.Builder()
-            .baseUrl("https://trip-planner.free.beeceptor.com")
+            .baseUrl("https://trip-planner.free.beeceptor.com/")
             .addCallAdapterFactory(RequestAdapterFactory.create())
             .addConverterFactory(
                 GsonConverterFactory.create(
-                    GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").create()
+                    GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss").setLenient().create()
                 )
             )
             .build().create(ApiService::class.java)

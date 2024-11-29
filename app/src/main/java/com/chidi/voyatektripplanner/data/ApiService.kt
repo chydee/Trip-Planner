@@ -10,15 +10,7 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("/api/trips")
-    fun getAllTrips(): RequestWrapper<List<Trip>>
-
-    @GET("/api/trips/{id}")
-    fun getTrip(@Path("id") id: Int): RequestWrapper<Trip>
-
-    @POST("/api/trips")
-    fun createTrip(@Body trip: Trip): RequestWrapper<Trip>
-
+    // Location search API
     @GET("https://nominatim.openstreetmap.org/search")
     fun getLocations(
         @Query("q") query: String,
@@ -26,4 +18,13 @@ interface ApiService {
         @Query("addressdetails") addressDetails: Int = 1,
         @Query("limit") limit: Int = 20
     ): RequestWrapper<List<Location>>
+
+    @GET("api/trips")
+    fun getTrips(): RequestWrapper<List<Trip>>
+
+    @GET("api/trips/{id}")
+    fun getTripDetails(@Path("id") id: Int): RequestWrapper<Trip>
+
+    @POST("api/create")
+    fun createTrip(@Body trip: Trip): RequestWrapper<Trip>
 }

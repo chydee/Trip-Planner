@@ -52,7 +52,7 @@ class LandingPageViewModel @Inject constructor(
 
     fun getAllTrips() {
         viewModelScope.launch {
-            _trips.emitAll(repository.getAllTrips())
+            _trips.emitAll(repository.getTrips())
         }
     }
 

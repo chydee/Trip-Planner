@@ -17,7 +17,7 @@ class TripDetailsViewModel @Inject constructor(
 
     @OptIn(ExperimentalCoroutinesApi::class)
     val trip = _id.flatMapLatest {
-        repository.getTrip(it)
+        repository.getTripDetails(it)
     }
 
     fun getTrip(id: Int) {

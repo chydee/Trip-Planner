@@ -13,15 +13,19 @@ class MainRepository @Inject constructor(
     private val apiService: ApiService
 ) : BaseRepository {
 
-    override fun getTrip(id: Int): Flow<Response<Trip>> =
-        apiService.getTrip(id).execute()
+    override fun getTripDetails(id: Int): Flow<Response<Trip>> {
+        return apiService.getTripDetails(id).execute()
+    }
 
-    override fun getAllTrips(): Flow<Response<List<Trip>>> =
-        apiService.getAllTrips().execute()
+    override fun getTrips(): Flow<Response<List<Trip>>> {
+        return apiService.getTrips().execute()
+    }
 
-    override fun createTrip(trip: Trip): Flow<Response<Trip>> =
-        apiService.createTrip(trip).execute()
+    override fun createTrip(trip: Trip): Flow<Response<Trip>> {
+        return apiService.createTrip(trip).execute()
+    }
 
-    override fun getLocations(query: String): Flow<Response<List<Location>>> =
-        apiService.getLocations(query).execute()
+    override fun getLocations(query: String): Flow<Response<List<Location>>> {
+        return apiService.getLocations(query).execute()
+    }
 }

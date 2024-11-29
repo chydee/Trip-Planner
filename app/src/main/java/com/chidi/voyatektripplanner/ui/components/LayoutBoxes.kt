@@ -31,10 +31,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.chidi.voyatektripplanner.R
+import com.chidi.voyatektripplanner.data.models.Address
+import com.chidi.voyatektripplanner.data.models.Location
 import com.chidi.voyatektripplanner.data.models.TravelStyle
 import com.chidi.voyatektripplanner.data.models.Trip
 import com.chidi.voyatektripplanner.ui.theme.LocalCustomColors
 import com.chidi.voyatektripplanner.ui.theme.VoyatekTripPlannerTheme
+import com.chidi.voyatektripplanner.ui.utils.format
 import java.util.Calendar
 
 @Composable
