@@ -1,7 +1,4 @@
-```markdown
 # Trip Planner
-
-## Project Overview
 
 Trip Planner is an Android application designed as part of an interview assessment. The app enables users to create and view trips using a
 responsive UI designed from the provided Figma mockups. It integrates with an external API to perform CRUD operations on trip data.
@@ -136,5 +133,3 @@ responsive UI designed from the provided Figma mockups. It integrates with an ex
 ## Screenshots
 
 *(Add screenshots of your application)*
-
-```
