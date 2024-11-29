@@ -18,8 +18,8 @@ kspVersion = "2.0.0-1.0.22"
 hiltAndroid = "2.51.1"
 retrofit = "2.11.0"
 converterGson = "2.9.0"
-coreSplashscreen = "1.2.0-alpha01"
-navigationComposeVersion = "2.8.1"
+coreSplashscreen = "1.2.0-alpha02"
+navigationComposeVersion = "2.8.4"
 kotlinxSerializationJson = "1.7.2"
 
 [libraries]
