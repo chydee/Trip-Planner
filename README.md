@@ -60,7 +60,7 @@ responsive UI designed from the provided Figma mockups. It integrates with an ex
 
 ## APK Link
 
-[Download APK](#) *(Replace `#` with the actual APK link once uploaded)*
+[Download APK](https://github.com/chydee/Trip-Planner/releases/download/v1.0/app-release.apk)
 
 ## Screenshots
 
