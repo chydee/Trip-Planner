@@ -35,7 +35,7 @@ object NetworkModule {
     @Provides
     fun provideApiService(): ApiService =
         Retrofit.Builder()
-            .baseUrl("https://trip-planner.free.beeceptor.com/")
+            .baseUrl("https://chidi-trip-planner.free.beeceptor.com/")
             .addCallAdapterFactory(RequestAdapterFactory.create())
             .addConverterFactory(
                 GsonConverterFactory.create(

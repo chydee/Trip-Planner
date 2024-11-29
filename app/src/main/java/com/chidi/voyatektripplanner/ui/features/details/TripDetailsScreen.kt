@@ -147,7 +147,7 @@ fun DetailsScreenLayout(trip: Trip) {
             )
             val subTitleColor = LocalCustomColors.current.blueDark10
             Text(
-                "${trip.location?.display_name} | ${stringResource(trip.travelStyle!!.textResId)}",
+                "${trip.location?.display_name ?: ""} | ${stringResource(trip.travelStyle?.textResId ?: TravelStyle.Solo.textResId)}",
                 style = MaterialTheme.typography.labelMedium.copy(
                     color = subTitleColor,
                     fontWeight = FontWeight.Medium

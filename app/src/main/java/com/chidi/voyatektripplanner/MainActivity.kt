@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.chidi.voyatektripplanner.ui.MainScreen
+import com.chidi.voyatektripplanner.ui.MainPage
 import com.chidi.voyatektripplanner.ui.theme.VoyatekTripPlannerTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.serialization.Serializable
@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             VoyatekTripPlannerTheme() {
-                MainScreen()
+                MainPage()
             }
         }
     }

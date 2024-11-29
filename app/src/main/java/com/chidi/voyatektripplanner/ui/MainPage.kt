@@ -26,7 +26,7 @@ import com.chidi.voyatektripplanner.ui.states.rememberAppState
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainScreen(
+fun MainPage(
     appState: AppState = rememberAppState()
 ) {
     Scaffold(

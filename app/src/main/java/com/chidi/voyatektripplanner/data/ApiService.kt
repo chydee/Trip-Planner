@@ -19,12 +19,12 @@ interface ApiService {
         @Query("limit") limit: Int = 20
     ): RequestWrapper<List<Location>>
 
+    @POST("api/trips")
+    fun createTrip(@Body trip: Trip): RequestWrapper<Trip>
+
     @GET("api/trips")
     fun getTrips(): RequestWrapper<List<Trip>>
 
     @GET("api/trips/{id}")
     fun getTripDetails(@Path("id") id: Int): RequestWrapper<Trip>
-
-    @POST("api/create")
-    fun createTrip(@Body trip: Trip): RequestWrapper<Trip>
 }
